@@ -81,3 +81,53 @@ footer {
   header ul.show { display:flex; }
   .burger { display:block; }
 }
+/* Hizmetler Alanı Genel Ayarı */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9; /* Hafif gri arka plan */
+}
+
+/* Kutucukları Yan Yana Dizen Yapı */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Tek Bir Hizmet Kartı */
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+/* Mouse ile üzerine gelince (Hover) efekti */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #000; /* Siyah çerçeve belirir */
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Buton Tasarımı */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
