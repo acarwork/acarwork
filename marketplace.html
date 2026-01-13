@@ -2,46 +2,37 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Pazaryeri - ACARWORK MARKET</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pazaryeri | ACARWORK</title>
+    <style>
+        body { margin: 0; background: #0f0f0f; color: white; font-family: sans-serif; }
+        nav { background: #000; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #007bff; }
+        .logo { font-size: 22px; font-weight: bold; text-decoration:none; color:white; }
+        .menu { display: flex; list-style: none; gap: 20px; }
+        .menu a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
+        .container { padding: 50px 8%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .item { background: #1a1a1a; border: 1px solid #333; padding: 20px; border-radius: 10px; }
+        .item img { width: 100%; border-radius: 5px; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">ACARWORK MARKET</div>
-            <ul class="menu">
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="become-seller.html">Satıcı Ol</a></li>
-                <li><a href="contact.html">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section style="padding: 40px; max-width: 1200px; margin: auto;">
-        <h1 style="text-align: center;">AI Tasarım Pazaryeri</h1>
-        <p style="text-align: center;">En iyi yapay zeka tasarımlarını keşfedin ve satın alın.</p>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px;">
-            
-            <div style="background: #222; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #333;">
-                <img src="https://via.placeholder.com/250x180?text=Premium+Logo+Seti" alt="Ürün" style="width: 100%; border-radius: 5px;">
-                <h3 style="color: #fff;">Premium Logo Paketi</h3>
-                <p style="color: #aaa;">10 Adet Düzenlenebilir AI Logo</p>
-                <span style="font-size: 20px; color: #28a745; font-weight: bold;">250 TL</span>
-                <br><br>
-                <a href="#" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: block;">Satın Al</a>
-            </div>
-
-            <div style="background: #222; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #333;">
-                <img src="https://via.placeholder.com/250x180?text=AI+Karakter+Tasarımları" alt="Ürün" style="width: 100%; border-radius: 5px;">
-                <h3 style="color: #fff;">Siber-Punk Karakterler</h3>
-                <p style="color: #aaa;">50+ Yüksek Kalite Görsel</p>
-                <span style="font-size: 20px; color: #28a745; font-weight: bold;">150 TL</span>
-                <br><br>
-                <a href="#" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: block;">Satın Al</a>
-            </div>
-
-        </div>
-    </section>
+<nav>
+    <a href="index.html" class="logo">ACARWORK <span style="color:#007bff">MARKET</span></a>
+    <ul class="menu">
+        <li><a href="index.html">ANA SAYFA</a></li>
+        <li><a href="marketplace.html">PAZARYERİ</a></li>
+        <li><a href="services.html">HİZMETLER</a></li>
+        <li><a href="become-seller.html">SATICI OL</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <h1>Dijital Ürünler</h1>
+    <div class="grid">
+        <div class="item"><img src="https://via.placeholder.com/200x150?text=AI+Logo+1"><h3>Premium Logo Paketi</h3><p>250 TL</p></div>
+        <div class="item"><img src="https://via.placeholder.com/200x150?text=AI+Logo+2"><h3>Sosyal Medya Kiti</h3><p>150 TL</p></div>
+        <div class="item"><img src="https://via.placeholder.com/200x150?text=AI+Logo+3"><h3>AI Karakter Çizimi</h3><p>300 TL</p></div>
+    </div>
+</div>
 </body>
 </html>
