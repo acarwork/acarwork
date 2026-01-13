@@ -5,50 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACARWORK | Ana Sayfa</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0b0b0b; color: white; overflow-x: hidden; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: #000; color: white; overflow: hidden; }
 
         /* NAVBAR */
         nav { 
-            background: #000; 
-            padding: 0 5%; 
-            height: 70px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            border-bottom: 1px solid #007bff;
-            position: fixed; width: 100%; top: 0; z-index: 1000;
+            height: 80px; background: #000; padding: 0 5%; 
+            display: flex; justify-content: space-between; align-items: center; 
+            border-bottom: 1px solid #1a1a1a; position: fixed; width: 100%; top: 0; z-index: 1000;
         }
-        .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: #fff; }
+        .logo { font-size: 24px; font-weight: 800; color: #fff; text-decoration: none; letter-spacing: -1px; }
         .logo span { color: #007bff; }
-        .menu { display: flex; list-style: none; gap: 20px; }
-        .menu a { color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; transition: 0.3s; }
+        .menu { display: flex; list-style: none; gap: 30px; }
+        .menu a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 600; transition: 0.3s; }
         .menu a:hover { color: #007bff; }
 
         /* HERO AREA */
         .hero {
-            height: 100vh;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            text-align: center; padding: 0 20px;
+            height: 100vh; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; text-align: center;
             background: radial-gradient(circle at center, #111 0%, #000 100%);
         }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; font-weight: 800; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 30px; letter-spacing: -2px; }
         .hero h1 span { color: #007bff; }
 
-        /* SEARCH BOX */
+        /* ARAMA ÇUBUĞU */
         .search-box {
-            width: 100%; max-width: 600px;
-            display: flex; background: #fff; border-radius: 50px; overflow: hidden;
-            box-shadow: 0 0 20px rgba(0,123,255,0.2);
+            width: 100%; max-width: 650px; display: flex; 
+            background: #fff; border-radius: 12px; overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
-        .search-box input { flex: 1; padding: 18px 25px; border: none; outline: none; font-size: 16px; }
-        .search-box button { background: #007bff; color: white; border: none; padding: 0 30px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .search-box input { flex: 1; padding: 22px; border: none; outline: none; font-size: 16px; color: #000; }
+        .search-box button { background: #007bff; color: white; border: none; padding: 0 35px; font-weight: bold; cursor: pointer; transition: 0.3s; }
         .search-box button:hover { background: #0056b3; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">ACARWORK<span> MARKET</span></a>
+        <a href="index.html" class="logo">ACARWORK<span>MARKET</span></a>
         <ul class="menu">
             <li><a href="marketplace.html">PAZARYERİ</a></li>
             <li><a href="services.html">HİZMETLER</a></li>
@@ -58,7 +52,7 @@
     <section class="hero">
         <h1>Mükemmel AI <span>Tasarımcıyı</span> Bulun</h1>
         <div class="search-box">
-            <input type="text" placeholder="Hangi hizmete ihtiyacınız var?">
+            <input type="text" placeholder="Hizmet arayın... (Örn: Logo Tasarımı)">
             <button>Ara</button>
         </div>
     </section>
