@@ -2,118 +2,44 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pazaryeri | ACARWORK</title>
     <style>
-        /* TEMEL AYARLAR */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0b0b0b; color: white; padding-top: 90px; }
-
-        /* NAVBAR */
-        nav { 
-            height: 75px; background: #000; padding: 0 5%; 
-            display: flex; justify-content: space-between; align-items: center; 
-            border-bottom: 2px solid #007bff; position: fixed; width: 100%; top: 0; z-index: 1000;
-        }
-        .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: #fff; }
-        .logo span { color: #007bff; }
-        .menu { display: flex; list-style: none; gap: 20px; }
-        .menu a { color: #fff; text-decoration: none; font-size: 14px; font-weight: bold; }
-
-        /* IZGARA SİSTEMİ (GRID) */
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 20px; 
-        }
-
-        /* ÜRÜN KARTLARI */
-        .card { 
-            background: #161616; border-radius: 12px; overflow: hidden; 
-            border: 1px solid #222; transition: 0.3s;
-            display: flex; flex-direction: column;
-        }
-        .card:hover { border-color: #007bff; transform: translateY(-5px); }
-
-        /* RESİM KUTUSU */
-        .img-box { 
-            width: 100%; height: 220px; background: #fff; 
-            display: flex; align-items: center; justify-content: center; padding: 10px;
-        }
-        .img-box img { max-width: 90%; max-height: 90%; object-fit: contain; }
-
-        /* BİLGİ ALANI */
-        .info { padding: 15px; text-align: left; }
-        .info h3 { font-size: 16px; margin-bottom: 10px; color: #eee; }
+        body { margin: 0; background: #0b0b0b; color: white; font-family: sans-serif; }
+        nav { background: #000; padding: 20px; border-bottom: 2px solid #007bff; display: flex; justify-content: center; gap: 30px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
         
-        .price-row { 
-            display: flex; justify-content: space-between; align-items: center;
-            border-top: 1px solid #222; padding-top: 10px; margin-top: 10px;
-        }
-        .price { color: #007bff; font-weight: bold; font-size: 18px; }
-        .btn { background: #007bff; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 13px; font-weight: bold; }
+        .container { padding: 40px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: #161616; border: 1px solid #333; width: 250px; border-radius: 10px; overflow: hidden; text-align: center; }
+        .img-box { background: white; height: 180px; display: flex; align-items: center; justify-content: center; }
+        .img-box img { max-width: 80%; max-height: 80%; }
+        .info { padding: 15px; }
+        .price { color: #007bff; font-weight: bold; }
     </style>
 </head>
 <body>
-
     <nav>
-        <a href="index.html" class="logo">ACARWORK<span>MARKET</span></a>
-        <ul class="menu">
-            <li><a href="index.html">ANA SAYFA</a></li>
-            <li><a href="marketplace.html">PAZARYERİ</a></li>
-            <li><a href="services.html">HİZMETLER</a></li>
-            <li><a href="become-seller.html">SATICI OL</a></li>
-        </ul>
+        <a href="index.html">ANA SAYFA</a>
+        <a href="marketplace.html">PAZARYERİ</a>
+        <a href="services.html">HİZMETLER</a>
     </nav>
 
     <div class="container">
-        <div class="grid">
-            <div class="card">
-                <div class="img-box"><img src="logo1.png" alt="Logo 1"></div>
-                <div class="info">
-                    <h3>Premium AI Logo v1</h3>
-                    <div class="price-row">
-                        <span class="price">250 ₺</span>
-                        <a href="#" class="btn">İncele</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="img-box"><img src="logo2.png" alt="Logo 2"></div>
-                <div class="info">
-                    <h3>Modern Tech Logo</h3>
-                    <div class="price-row">
-                        <span class="price">300 ₺</span>
-                        <a href="#" class="btn">İncele</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="img-box"><img src="logo3.png" alt="Logo 3"></div>
-                <div class="info">
-                    <h3>Minimalist İkon Seti</h3>
-                    <div class="price-row">
-                        <span class="price">150 ₺</span>
-                        <a href="#" class="btn">İncele</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="img-box"><img src="logo4.png" alt="Logo 4"></div>
-                <div class="info">
-                    <h3>Kurumsal Kimlik Paketi</h3>
-                    <div class="price-row">
-                        <span class="price">450 ₺</span>
-                        <a href="#" class="btn">İncele</a>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+            <div class="img-box"><img src="logo1.png"></div>
+            <div class="info"><h3>Logo Tasarımı 1</h3><p class="price">250 TL</p></div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="logo2.png"></div>
+            <div class="info"><h3>Logo Tasarımı 2</h3><p class="price">300 TL</p></div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="logo3.png"></div>
+            <div class="info"><h3>Logo Tasarımı 3</h3><p class="price">150 TL</p></div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="logo4.png"></div>
+            <div class="info"><h3>Logo Tasarımı 4</h3><p class="price">450 TL</p></div>
         </div>
     </div>
-
 </body>
 </html>
