@@ -2,59 +2,26 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACARWORK | Ana Sayfa</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background: #000; color: white; overflow: hidden; }
-
-        /* NAVBAR */
-        nav { 
-            height: 80px; background: #000; padding: 0 5%; 
-            display: flex; justify-content: space-between; align-items: center; 
-            border-bottom: 1px solid #1a1a1a; position: fixed; width: 100%; top: 0; z-index: 1000;
-        }
-        .logo { font-size: 24px; font-weight: 800; color: #fff; text-decoration: none; letter-spacing: -1px; }
-        .logo span { color: #007bff; }
-        .menu { display: flex; list-style: none; gap: 30px; }
-        .menu a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 600; transition: 0.3s; }
-        .menu a:hover { color: #007bff; }
-
-        /* HERO AREA */
-        .hero {
-            height: 100vh; display: flex; flex-direction: column; 
-            justify-content: center; align-items: center; text-align: center;
-            background: radial-gradient(circle at center, #111 0%, #000 100%);
-        }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 30px; letter-spacing: -2px; }
-        .hero h1 span { color: #007bff; }
-
-        /* ARAMA ÇUBUĞU */
-        .search-box {
-            width: 100%; max-width: 650px; display: flex; 
-            background: #fff; border-radius: 12px; overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-        .search-box input { flex: 1; padding: 22px; border: none; outline: none; font-size: 16px; color: #000; }
-        .search-box button { background: #007bff; color: white; border: none; padding: 0 35px; font-weight: bold; cursor: pointer; transition: 0.3s; }
-        .search-box button:hover { background: #0056b3; }
+        body { margin: 0; background: #0b0b0b; color: white; font-family: sans-serif; text-align: center; }
+        nav { background: #000; padding: 20px; border-bottom: 2px solid #007bff; display: flex; justify-content: center; gap: 30px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        .hero { padding: 100px 20px; }
+        h1 { font-size: 40px; }
+        .btn { background: #007bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">ACARWORK<span>MARKET</span></a>
-        <ul class="menu">
-            <li><a href="marketplace.html">PAZARYERİ</a></li>
-            <li><a href="services.html">HİZMETLER</a></li>
-            <li><a href="become-seller.html">SATICI OL</a></li>
-        </ul>
+        <a href="index.html">ANA SAYFA</a>
+        <a href="marketplace.html">PAZARYERİ</a>
+        <a href="services.html">HİZMETLER</a>
     </nav>
-    <section class="hero">
-        <h1>Mükemmel AI <span>Tasarımcıyı</span> Bulun</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Hizmet arayın... (Örn: Logo Tasarımı)">
-            <button>Ara</button>
-        </div>
-    </section>
+    <div class="hero">
+        <h1>ACARWORK Market'e Hoş Geldiniz</h1>
+        <p>En iyi AI tasarımlarını keşfetmeye başlayın.</p>
+        <a href="marketplace.html" class="btn">Pazaryerini Gör</a>
+    </div>
 </body>
 </html>
