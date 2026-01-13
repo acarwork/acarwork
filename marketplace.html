@@ -5,54 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pazaryeri | ACARWORK</title>
     <style>
+        /* TEMEL AYARLAR */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0b0b0b; color: white; padding-top: 100px; }
+        body { background: #0b0b0b; color: white; padding-top: 90px; }
 
+        /* NAVBAR */
         nav { 
-            background: #000; padding: 0 5%; height: 70px; 
+            height: 75px; background: #000; padding: 0 5%; 
             display: flex; justify-content: space-between; align-items: center; 
-            border-bottom: 1px solid #007bff; position: fixed; width: 100%; top: 0; z-index: 1000;
+            border-bottom: 2px solid #007bff; position: fixed; width: 100%; top: 0; z-index: 1000;
         }
         .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: #fff; }
         .logo span { color: #007bff; }
         .menu { display: flex; list-style: none; gap: 20px; }
-        .menu a { color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; }
+        .menu a { color: #fff; text-decoration: none; font-size: 14px; font-weight: bold; }
 
-        .container { padding: 20px 5%; }
+        /* IZGARA SİSTEMİ (GRID) */
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
         .grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
-            gap: 25px; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
         }
 
-        /* ÜRÜN KARTI DÜZENLEMESİ */
+        /* ÜRÜN KARTLARI */
         .card { 
             background: #161616; border-radius: 12px; overflow: hidden; 
             border: 1px solid #222; transition: 0.3s;
+            display: flex; flex-direction: column;
         }
         .card:hover { border-color: #007bff; transform: translateY(-5px); }
 
+        /* RESİM KUTUSU */
         .img-box { 
-            width: 100%; height: 200px; background: #fff; 
-            display: flex; align-items: center; justify-content: center; padding: 15px;
+            width: 100%; height: 220px; background: #fff; 
+            display: flex; align-items: center; justify-content: center; padding: 10px;
         }
-        .img-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .img-box img { max-width: 90%; max-height: 90%; object-fit: contain; }
 
-        .info { padding: 20px; }
-        .info h3 { font-size: 16px; margin-bottom: 15px; color: #eee; }
+        /* BİLGİ ALANI */
+        .info { padding: 15px; text-align: left; }
+        .info h3 { font-size: 16px; margin-bottom: 10px; color: #eee; }
         
         .price-row { 
             display: flex; justify-content: space-between; align-items: center;
-            border-top: 1px solid #222; padding-top: 15px;
+            border-top: 1px solid #222; padding-top: 10px; margin-top: 10px;
         }
         .price { color: #007bff; font-weight: bold; font-size: 18px; }
-        .btn { background: #007bff; color: white; padding: 8px 15px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: bold; }
+        .btn { background: #007bff; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 13px; font-weight: bold; }
     </style>
 </head>
 <body>
+
     <nav>
-        <a href="index.html" class="logo">ACARWORK<span> MARKET</span></a>
+        <a href="index.html" class="logo">ACARWORK<span>MARKET</span></a>
         <ul class="menu">
+            <li><a href="index.html">ANA SAYFA</a></li>
             <li><a href="marketplace.html">PAZARYERİ</a></li>
             <li><a href="services.html">HİZMETLER</a></li>
             <li><a href="become-seller.html">SATICI OL</a></li>
@@ -62,39 +70,42 @@
     <div class="container">
         <div class="grid">
             <div class="card">
-                <div class="img-box"><img src="logo1.png"></div>
+                <div class="img-box"><img src="logo1.png" alt="Logo 1"></div>
                 <div class="info">
-                    <h3>Premium AI Logo Tasarımı</h3>
+                    <h3>Premium AI Logo v1</h3>
                     <div class="price-row">
                         <span class="price">250 ₺</span>
                         <a href="#" class="btn">İncele</a>
                     </div>
                 </div>
             </div>
+
             <div class="card">
-                <div class="img-box"><img src="logo2.png"></div>
+                <div class="img-box"><img src="logo2.png" alt="Logo 2"></div>
                 <div class="info">
-                    <h3>Modern Teknoloji Logosu</h3>
+                    <h3>Modern Tech Logo</h3>
                     <div class="price-row">
                         <span class="price">300 ₺</span>
                         <a href="#" class="btn">İncele</a>
                     </div>
                 </div>
             </div>
+
             <div class="card">
-                <div class="img-box"><img src="logo3.png"></div>
+                <div class="img-box"><img src="logo3.png" alt="Logo 3"></div>
                 <div class="info">
-                    <h3>Minimalist Simge Paketi</h3>
+                    <h3>Minimalist İkon Seti</h3>
                     <div class="price-row">
                         <span class="price">150 ₺</span>
                         <a href="#" class="btn">İncele</a>
                     </div>
                 </div>
             </div>
+
             <div class="card">
-                <div class="img-box"><img src="logo4.png"></div>
+                <div class="img-box"><img src="logo4.png" alt="Logo 4"></div>
                 <div class="info">
-                    <h3>E-Ticaret Görsel Paketi</h3>
+                    <h3>Kurumsal Kimlik Paketi</h3>
                     <div class="price-row">
                         <span class="price">450 ₺</span>
                         <a href="#" class="btn">İncele</a>
@@ -103,5 +114,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
