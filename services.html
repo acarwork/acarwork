@@ -2,48 +2,32 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Hizmetlerimiz - ACARWORK MARKET</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler | ACARWORK</title>
+    <style>
+        body { margin: 0; background: #0f0f0f; color: white; font-family: sans-serif; }
+        nav { background: #000; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #007bff; }
+        .logo { font-size: 22px; font-weight: bold; text-decoration:none; color:white; }
+        .menu { display: flex; list-style: none; gap: 20px; }
+        .menu a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
+        .container { padding: 50px 8%; }
+        .service-box { background: #1a1a1a; padding: 30px; border-radius: 10px; border-left: 5px solid #28a745; margin-bottom: 20px; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">ACARWORK MARKET</div>
-            <ul class="menu">
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="marketplace.html">Pazaryeri</a></li>
-                <li><a href="contact.html">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section style="padding: 50px; max-width: 1000px; margin: auto;">
-        <h1 style="text-align: center;">Özel AI Tasarım Hizmetleri</h1>
-        <p style="text-align: center;">Size özel, benzersiz ve yapay zeka destekli profesyonel çözümler.</p>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px;">
-            <div style="flex: 1; min-width: 300px; background: #222; padding: 30px; border-radius: 15px; border: 1px solid #007bff;">
-                <h2 style="color: #007bff;">Logo Tasarımı</h2>
-                <p>Markanızın ruhunu yansıtan, modern ve akılda kalıcı AI logolar.</p>
-                <ul>
-                    <li>3 Farklı Taslak</li>
-                    <li>Sınırsız Revizyon</li>
-                    <li>Vektörel Format (SVG/AI)</li>
-                </ul>
-                <a href="contact.html" style="color: #fff; text-decoration: underline;">Teklif Al →</a>
-            </div>
-
-            <div style="flex: 1; min-width: 300px; background: #222; padding: 30px; border-radius: 15px; border: 1px solid #28a745;">
-                <h2 style="color: #28a745;">Sosyal Medya Paketi</h2>
-                <p>Instagram ve TikTok için AI ile oluşturulmuş görsel içerik seti.</p>
-                <ul>
-                    <li>15 Adet Gönderi Tasarımı</li>
-                    <li>Profil Fotoğrafı & Banner</li>
-                    <li>Tema Belirleme</li>
-                </ul>
-                <a href="contact.html" style="color: #fff; text-decoration: underline;">Teklif Al →</a>
-            </div>
-        </div>
-    </section>
+<nav>
+    <a href="index.html" class="logo">ACARWORK <span style="color:#007bff">MARKET</span></a>
+    <ul class="menu">
+        <li><a href="index.html">ANA SAYFA</a></li>
+        <li><a href="marketplace.html">PAZARYERİ</a></li>
+        <li><a href="services.html">HİZMETLER</a></li>
+        <li><a href="become-seller.html">SATICI OL</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <h1>Hizmetlerimiz</h1>
+    <div class="service-box"><h3>Özel AI Logo Tasarımı</h3><p>Markanıza özel, eşsiz yapay zeka tasarımları.</p></div>
+    <div class="service-box"><h3>Kurumsal Kimlik</h3><p>Profesyonel renk paleti ve font seçimi.</p></div>
+</div>
 </body>
 </html>
