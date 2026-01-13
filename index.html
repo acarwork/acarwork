@@ -7,7 +7,7 @@
     <style>
         body { margin: 0; background: #0b0b0b; color: white; font-family: 'Segoe UI', sans-serif; }
         
-        /* PROFESYONEL NAVBAR */
+        /* NAVBAR - MENÜ BURADA */
         nav { 
             background: #000; 
             padding: 15px 5%; 
@@ -19,16 +19,16 @@
             top: 0;
             z-index: 1000;
         }
-        .logo { font-size: 24px; font-weight: bold; text-decoration:none; color:white; letter-spacing: 1px; }
+        .logo { font-size: 24px; font-weight: bold; text-decoration:none; color:white; }
         .logo span { color: #007bff; }
-        .menu { display: flex; list-style: none; gap: 30px; margin: 0; padding: 0; }
-        .menu a { color: white; text-decoration: none; font-size: 15px; font-weight: 600; transition: 0.3s; }
+        .menu { display: flex; list-style: none; gap: 25px; margin: 0; padding: 0; }
+        .menu a { color: white; text-decoration: none; font-size: 15px; font-weight: bold; transition: 0.3s; }
         .menu a:hover { color: #007bff; }
 
-        /* FIVERR STYLE HERO SECTION */
+        /* HERO ALANI */
         .hero {
-            height: 70vh;
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964');
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -38,26 +38,19 @@
             text-align: center;
             padding: 0 20px;
         }
-        .hero h1 { font-size: 48px; margin-bottom: 30px; font-weight: 800; max-width: 800px; }
-        .hero h1 span { color: #007bff; }
+        .hero h1 { font-size: 40px; margin-bottom: 25px; }
+        .hero span { color: #007bff; }
 
-        /* ARAMA ÇUBUĞU */
         .search-container {
             width: 100%;
-            max-width: 650px;
+            max-width: 600px;
             display: flex;
             background: white;
-            border-radius: 8px;
+            border-radius: 5px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
-        .search-container input { flex: 1; padding: 18px 25px; border: none; outline: none; font-size: 16px; color: #333; }
-        .search-container button { background: #007bff; color: white; border: none; padding: 0 35px; cursor: pointer; font-weight: bold; font-size: 16px; transition: 0.3s; }
-        .search-container button:hover { background: #0056b3; }
-
-        .popular-tags { margin-top: 25px; display: flex; gap: 15px; align-items: center; font-size: 14px; color: #aaa; }
-        .tag { color: white; border: 1px solid #444; padding: 5px 15px; border-radius: 20px; text-decoration: none; transition: 0.3s; }
-        .tag:hover { border-color: #007bff; color: #007bff; }
+        .search-container input { flex: 1; padding: 15px; border: none; outline: none; font-size: 16px; color: #333; }
+        .search-container button { background: #007bff; color: white; border: none; padding: 0 25px; cursor: pointer; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -74,14 +67,8 @@
 <div class="hero">
     <h1>İşiniz için mükemmel <span>AI tasarımcıyı</span> bulun</h1>
     <div class="search-container">
-        <input type="text" placeholder="Hizmet veya tasarım arayın (ör: Logo, Karakter)">
+        <input type="text" placeholder="Hangi hizmeti arıyorsunuz?">
         <button>Ara</button>
-    </div>
-    <div class="popular-tags">
-        <span>Popüler:</span>
-        <a href="#" class="tag">Logo Tasarımı</a>
-        <a href="#" class="tag">AI Karakter</a>
-        <a href="#" class="tag">İkon Paketi</a>
     </div>
 </div>
 
