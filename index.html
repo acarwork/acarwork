@@ -3,73 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACARWORK - Türkiye'nin AI Pazaryeri</title>
+    <title>ACARWORK | Profesyonel AI Çözümleri</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1600');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; background: #000; color: #fff;">
-        <div class="logo">
-            <a href="index.html" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 1.5rem;">ACARWORK</a>
-        </div>
-        <ul class="menu" style="display: flex; list-style: none; gap: 20px; margin: 0; padding: 0;">
-            <li><a href="index.html" style="color: #fff; text-decoration: none;">Ana Sayfa</a></li>
-            <li><a href="marketplace.html" style="color: #fff; text-decoration: none;">Pazaryeri</a></li>
-            <li><a href="services.html" style="color: #fff; text-decoration: none;">Hizmetler</a></li>
-            <li><a href="become-seller.html" style="color: #fff; text-decoration: none;">Satıcı Ol</a></li>
-            <li><a href="contact.html" style="color: #fff; text-decoration: none;">İletişim</a></li>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">ACARWORK<span>MARKET</span></div>
+        <ul class="menu">
+            <li><a href="index.html">ANA SAYFA</a></li>
+            <li><a href="marketplace.html">PAZARYERİ</a></li>
+            <li><a href="services.html">HİZMETLER</a></li>
+            <li><a href="become-seller.html" class="btn-seller">SATICI OL</a></li>
         </ul>
     </nav>
 </header>
 
-    <section class="hero">
-        <h1 style="font-size: 3rem; margin-bottom: 10px;">Yapay Zeka Tasarımlarının Merkezi</h1>
-        <p style="font-size: 1.2rem; max-width: 600px;">İster profesyonel hizmet alın, ister hazır tasarımları hemen indirin. Türkiye'nin en büyük AI tasarım topluluğuna katılın.</p>
-        <div style="margin-top: 25px;">
-            <a href="marketplace.html" style="background: #007bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-right: 15px;">Alışverişe Başla</a>
-            <a href="become-seller.html" style="background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold;">Hemen Satış Yap</a>
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Yapay Zeka ile Tasarımın Sınırlarını Zorlayın</h1>
+        <p>İster hazır tasarım satın alın, ister markanız için özel hizmet isteyin.</p>
+        <div class="hero-btns">
+            <a href="marketplace.html" class="btn-primary">Ürünleri İncele</a>
+            <a href="services.html" class="btn-secondary">Özel Teklif Al</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section style="padding: 50px; text-align: center; max-width: 1000px; margin: auto;">
-        <h2>Nasıl Çalışır?</h2>
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px;">
-            <div style="flex: 1; min-width: 250px; padding: 20px;">
-                <div style="font-size: 40px;">🎨</div>
-                <h3>Tasarımını Seç</h3>
-                <p>Kategorilere göz at, ihtiyacın olan AI tasarımını veya hizmetini bul.</p>
-            </div>
-            <div style="flex: 1; min-width: 250px; padding: 20px;">
-                <div style="font-size: 40px;">💳</div>
-                <h3>Güvenle Al</h3>
-                <p>İster kredi kartı ister havale ile ödemeni gerçekleştir.</p>
-            </div>
-            <div style="flex: 1; min-width: 250px; padding: 20px;">
-                <div style="font-size: 40px;">🚀</div>
-                <h3>Hemen Kullan</h3>
-                <p>Dijital ürünün anında mailine gelsin veya hizmetin başlasın.</p>
-            </div>
+<section class="container">
+    <h2 class="section-title">Hizmet Alanlarımız</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="card-icon">🎨</div>
+            <h3>AI Logo Tasarımı</h3>
+            <p>Saniyeler içinde markanız için benzersiz logolar oluşturuyoruz.</p>
         </div>
-    </section>
+        <div class="service-card">
+            <div class="card-icon">🚀</div>
+            <h3>Hızlı Teslimat</h3>
+            <p>Dijital ürünleriniz ödeme sonrası anında hesabınızda.</p>
+        </div>
+        <div class="service-card">
+            <div class="card-icon">💰</div>
+            <h3>Birlikte Kazanalım</h3>
+            <p>Kendi AI tasarımlarınızı yükleyin, biz satalım, siz kazanın.</p>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 ACARWORK MARKET - Tüm Hakları Saklıdır.</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 ACARWORK - Dijital Geleceğe Hoş Geldiniz.</p>
+</footer>
+
 </body>
-</html>          
+</html>       
+
 
 
 
