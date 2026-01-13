@@ -5,24 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACARWORK MARKET</title>
     <style>
-        body { margin: 0; background: #000; color: #fff; font-family: Arial, sans-serif; }
-        nav { background: #111; padding: 20px; display: flex; justify-content: space-around; border-bottom: 2px solid #007bff; }
-        nav a { color: #fff; text-decoration: none; font-weight: bold; }
-        .hero { height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-        .btn { background: #007bff; padding: 15px 30px; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        /* TEMEL AYARLAR */
+        body { margin: 0; background: #000; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; }
+        
+        /* DÜZELTİLMİŞ MENÜ (NAVBAR) */
+        nav { 
+            background: #111; 
+            padding: 25px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; /* Linklerin arası açıldı */
+            border-bottom: 2px solid #007bff; 
+        }
+        
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 15px; 
+            letter-spacing: 0.5px;
+            transition: 0.3s; 
+        }
+        
+        nav a:hover { 
+            color: #007bff; /* Üzerine gelince mavi olur */
+        }
+
+        /* ANA BÖLÜM (HERO) */
+        .hero { 
+            height: 70vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+        }
+        
+        .hero h1 { 
+            font-size: 48px; 
+            margin-bottom: 10px; 
+        }
+        
+        .hero p { 
+            color: #ccc; 
+            font-size: 18px; 
+        }
+
+        .btn { 
+            background: #007bff; 
+            padding: 15px 40px; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin-top: 25px; 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+        }
     </style>
 </head>
 <body>
+
     <nav>
         <a href="index.html">ANA SAYFA</a>
         <a href="marketplace.html">PAZARYERİ</a>
         <a href="services.html">HİZMETLER</a>
         <a href="become-seller.html">SATICI OL</a>
     </nav>
+
     <div class="hero">
         <h1>ACARWORK MARKET</h1>
         <p>Yapay Zeka Tasarım Dünyasına Hoş Geldiniz</p>
-        <a href="services.html" class="btn">HİZMET AL</a>
-    </div>
-</body>
-</html>
+        <a href="services.html" class="btn">HİZMET
