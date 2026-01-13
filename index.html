@@ -5,128 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACARWORK | Ana Sayfa</title>
     <style>
-        /* SIFIRLAMA */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0b0b0b; color: white; line-height: 1.6; }
+        body { background: #0b0b0b; color: white; overflow-x: hidden; }
 
-        /* NAVBAR - EKRANA TAM OTURAN DÜZEN */
+        /* NAVBAR */
         nav { 
             background: #000; 
             padding: 0 5%; 
-            height: 80px; 
+            height: 70px; 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
-            border-bottom: 1px solid #333;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+            border-bottom: 1px solid #007bff;
+            position: fixed; width: 100%; top: 0; z-index: 1000;
         }
-        .logo { font-size: 22px; font-weight: bold; text-decoration: none; color: #fff; }
+        .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: #fff; }
         .logo span { color: #007bff; }
-        
-        .menu { display: flex; list-style: none; gap: 30px; }
-        .menu a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+        .menu { display: flex; list-style: none; gap: 20px; }
+        .menu a { color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; transition: 0.3s; }
         .menu a:hover { color: #007bff; }
 
-        /* HERO - FIVERR GİBİ ORANTILI MERKEZLEME */
+        /* HERO AREA */
         .hero {
             height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80');
-            background-size: cover;
-            background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; padding: 0 20px;
+            background: radial-gradient(circle at center, #111 0%, #000 100%);
         }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; font-weight: 800; }
+        .hero h1 span { color: #007bff; }
 
-        .hero h1 { 
-            font-size: 42px; 
-            margin-bottom: 30px; 
-            max-width: 700px; 
-            font-weight: 700;
+        /* SEARCH BOX */
+        .search-box {
+            width: 100%; max-width: 600px;
+            display: flex; background: #fff; border-radius: 50px; overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,123,255,0.2);
         }
-        .hero h1 span { color: #007bff; italic; }
-
-        /* ARAMA ÇUBUĞU - MODERN VE ŞIK */
-        .search-container {
-            width: 100%;
-            max-width: 600px;
-            display: flex;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        .search-container input {
-            flex: 1;
-            padding: 20px;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            color: #333;
-        }
-        .search-container button {
-            background: #007bff;
-            color: #fff;
-            border: none;
-            padding: 0 30px;
-            font-weight: bold;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .search-container button:hover { background: #0056b3; }
-
-        .popular {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #ccc;
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-        .popular a { 
-            color: #fff; 
-            text-decoration: none; 
-            border: 1px solid #555; 
-            padding: 4px 12px; 
-            border-radius: 20px; 
-            transition: 0.3s;
-        }
-        .popular a:hover { border-color: #007bff; color: #007bff; }
+        .search-box input { flex: 1; padding: 18px 25px; border: none; outline: none; font-size: 16px; }
+        .search-box button { background: #007bff; color: white; border: none; padding: 0 30px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .search-box button:hover { background: #0056b3; }
     </style>
 </head>
 <body>
-
     <nav>
-        <a href="index.html" class="logo">ACARWORK<span>MARKET</span></a>
+        <a href="index.html" class="logo">ACARWORK<span> MARKET</span></a>
         <ul class="menu">
             <li><a href="marketplace.html">PAZARYERİ</a></li>
             <li><a href="services.html">HİZMETLER</a></li>
             <li><a href="become-seller.html">SATICI OL</a></li>
         </ul>
     </nav>
-
     <section class="hero">
-        <h1>İşiniz için en iyi <span>AI tasarımcıları</span> burada bulun</h1>
-        
-        <div class="search-container">
-            <input type="text" placeholder="Hizmet arayın... (Örn: Logo Tasarımı)">
+        <h1>Mükemmel AI <span>Tasarımcıyı</span> Bulun</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Hangi hizmete ihtiyacınız var?">
             <button>Ara</button>
         </div>
-
-        <div class="popular">
-            <span>Popüler:</span>
-            <a href="#">Logo</a>
-            <a href="#">AI Karakter</a>
-            <a href="#">İkon</a>
-        </div>
     </section>
-
 </body>
 </html>
