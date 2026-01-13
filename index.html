@@ -6,78 +6,110 @@
     <title>ACARWORK MARKET</title>
     <style>
         /* TEMEL AYARLAR */
-        body { margin: 0; background: #000; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { margin: 0; background: #0b0b0b; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; }
         
-        /* DÜZELTİLMİŞ MENÜ (NAVBAR) */
+        /* MODERN NAVBAR (MARKETPLACE İLE AYNI) */
         nav { 
-            background: #111; 
-            padding: 25px; 
+            background: #050505; 
+            padding: 20px 8%; 
             display: flex; 
-            justify-content: center; 
-            gap: 40px; /* Linklerin arası açıldı */
+            justify-content: space-between; /* Logo sola, menü sağa */
+            align-items: center; 
             border-bottom: 2px solid #007bff; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* LOGO KISMI */
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .logo span { color: #007bff; }
+
+        /* MENÜ LİNKLERİ */
+        .nav-links {
+            display: flex;
+            gap: 30px;
         }
         
-        nav a { 
+        .nav-links a { 
             color: #fff; 
             text-decoration: none; 
-            font-weight: bold; 
-            font-size: 15px; 
-            letter-spacing: 0.5px;
+            font-weight: 600; 
+            font-size: 14px; 
+            text-transform: uppercase;
             transition: 0.3s; 
         }
         
-        nav a:hover { 
-            color: #007bff; /* Üzerine gelince mavi olur */
+        .nav-links a:hover { 
+            color: #007bff; 
         }
 
         /* ANA BÖLÜM (HERO) */
         .hero { 
-            height: 70vh; 
+            height: 80vh; 
             display: flex; 
             flex-direction: column; 
             justify-content: center; 
             align-items: center; 
             text-align: center;
+            padding: 0 20px;
         }
         
         .hero h1 { 
-            font-size: 48px; 
-            margin-bottom: 10px; 
+            font-size: 56px; 
+            margin: 0;
+            font-weight: 800;
         }
         
         .hero p { 
-            color: #ccc; 
-            font-size: 18px; 
+            color: #aaa; 
+            font-size: 20px; 
+            margin-top: 15px;
         }
 
         .btn { 
             background: #007bff; 
-            padding: 15px 40px; 
+            padding: 18px 45px; 
             color: #fff; 
             text-decoration: none; 
-            border-radius: 5px; 
-            margin-top: 25px; 
+            border-radius: 6px; 
+            margin-top: 35px; 
             font-weight: bold;
-            transition: 0.3s;
+            font-size: 16px;
+            transition: 0.4s;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
         }
 
         .btn:hover {
             background: #0056b3;
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">ANA SAYFA</a>
-        <a href="marketplace.html">PAZARYERİ</a>
-        <a href="services.html">HİZMETLER</a>
-        <a href="become-seller.html">SATICI OL</a>
+        <a href="index.html" class="logo">ACARWORK <span>MARKET</span></a>
+        <div class="nav-links">
+            <a href="index.html">ANA SAYFA</a>
+            <a href="marketplace.html">PAZARYERİ</a>
+            <a href="services.html">HİZMETLER</a>
+            <a href="become-seller.html">SATICI OL</a>
+        </div>
     </nav>
 
     <div class="hero">
         <h1>ACARWORK MARKET</h1>
         <p>Yapay Zeka Tasarım Dünyasına Hoş Geldiniz</p>
-        <a href="services.html" class="btn">HİZMET
+        <a href="services.html" class="btn">HİZMET AL</a>
+    </div>
+
+</body>
+</html>
