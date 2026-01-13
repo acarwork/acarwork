@@ -131,3 +131,11 @@ footer {
     border-radius: 5px;
     font-size: 14px;
 }
+section ul {
+    margin-bottom: 20px;
+}
+section ul li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
