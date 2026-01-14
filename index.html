@@ -176,6 +176,44 @@
             color: #ccc;
             font-weight: 500;
         }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh; /* Yüksekliği isteğine göre ayarlayabilirsin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #000; /* Video yüklenene kadar siyah görünsün */
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            object-fit: cover; /* Videoyu alana tam yayar, boşluk bırakmaz */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2; /* Yazıların videonun üstünde kalmasını sağlar */
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3); /* Yazıların okunması için hafif gölge */
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        /* Navigasyonun video üzerinde şık durması için index'e özel ek */
+        nav {
+            background: rgba(5, 5, 5, 0.8) !important;
+            backdrop-filter: blur(10px); /* Arkayı hafif bulanık yapar, çok kalitelidir */
+        }
     </style>
 </head>
 <body>
@@ -191,10 +229,11 @@
     </nav>
 
     <div class="hero">
-        <video autoplay muted loop class="hero-video">
-            <source src="hero-video.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="video1.mp4" type="video/mp4">
             Tarayıcınız video etiketini desteklemiyor.
         </video>
+
         <div class="hero-content">
             <h1>Yapay Zeka Tasarımda Yeni Nesil</h1>
             <p>Hayallerinizdeki projeleri gerçeğe dönüştürmek için buradayız.</p>
@@ -202,7 +241,7 @@
         </div>
     </div>
 
-   </div> 
+</div>
 
     <div class="partners-section">
         <h2>Hizmet Alanlarımız</h2>
@@ -244,4 +283,5 @@ Yapabildin mi? Bir sorun olursa hemen tüm kodu tekrar atabilirim.
 
 </body>
 </html>
+
 
