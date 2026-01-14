@@ -1,55 +1,141 @@
-      .menu a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; }
-        .menu a:hover { color: #007bff; }
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAZARYERİ | ACARWORK MARKET</title>
+    <style>
+        /* TEMEL AYARLAR */
+        body { margin: 0; background: #0b0b0b; color: white; font-family: 'Segoe UI', Arial, sans-serif; }
+        
+        /* MODERN NAVBAR (MENÜ) */
+        nav { 
+            background: #050505; 
+            padding: 20px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 2px solid #007bff; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-        /* İÇERİK */
-        .container { padding: 40px 5%; }
-        .header-area { text-align: center; margin-bottom: 40px; }
-        .header-area h1 { margin: 0; font-size: 32px; }
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .logo span { color: #007bff; }
 
-        /* IZGARA SİSTEMİ */
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 14px; 
+            text-transform: uppercase;
+            transition: 0.3s; 
+        }
+        
+        .nav-links a:hover { color: #007bff; }
+
+        /* PAZARYERİ IZGARA SİSTEMİ */
+        .container { 
+            padding: 60px 40px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
             gap: 25px; 
         }
 
-        /* ÜRÜN KARTI TASARIMI */
-        .product-card { 
+        /* ÜRÜN KARTLARI */
+        .card { 
             background: #161616; 
-            border-radius: 15px; 
+            border: 1px solid #333; 
+            width: 260px; 
+            border-radius: 12px; 
             overflow: hidden; 
-            border: 1px solid #222; 
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-        .product-card:hover { 
-            border-color: #007bff; 
-            transform: translateY(-5px); 
+            text-align: center; 
+            transition: 0.3s;
         }
 
-        /* RESİM ÇERÇEVESİ */
-        .img-container {
-            width: 100%;
-            height: 250px; 
-            background: #fff; /* Logoların beyaz zeminle bütünleşmesi için */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+        .card:hover {
+            border-color: #007bff;
+            transform: translateY(-5px);
         }
-        .img-container img {
+
+        .img-box { 
+            background: white; 
+            height: 200px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 15px;
+        }
+
+        .img-box img { 
             max-width: 90%; 
             max-height: 90%; 
-            object-fit: contain; /* Logoyu asla kesmez, tam gösterir */
+            object-fit: contain;
         }
 
-        /* ÜRÜN BİLGİLERİ */
-        .product-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .product-info h3 { margin: 0 0 10px 0; font-size: 18px; color: #eee; }
-        .product-info p { color: #888; font-size: 13px; line-height: 1.5; margin-bottom: 20px; }
+        .info { padding: 20px; }
+        
+        .info h3 { 
+            font-size: 18px; 
+            margin: 0; 
+            color: #fff;
+        }
 
-        /* FİYAT VE BUTON */
-        .price-row { 
-            display: flex; 
-            justify-content: space-be
+        .price { 
+            color: #007bff; 
+            font-weight: bold; 
+            font-size: 20px;
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ACARWORK <span>MARKET</span></a>
+        <div class="nav-links">
+            <a href="index.html">ANA SAYFA</a>
+            <a href="marketplace.html">PAZARYERİ</a>
+            <a href="services.html">HİZMETLER</a>
+            <a href="become-seller.html">SATICI OL</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="img-box"><img src="logo1.png"></div>
+            <div class="info"><h3>Logo Tasarımı 1</h3><span class="price">250 TL</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="logo2.png"></div>
+            <div class="info"><h3>Logo Tasarımı 2</h3><span class="price">300 TL</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="logo3.png"></div>
+            <div class="info"><h3>Logo Tasarımı 3</h3><span class="price">150 TL</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="logo4.png"></div>
+            <div class="info"><h3>Logo Tasarımı 4</h3><span class="price">450 TL</span></div>
+        </div>
+    </div>
+
+</body>
+</html>
